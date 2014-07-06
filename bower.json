@@ -1,7 +1,13 @@
 {
   "name": "purescript-easy-ffi",
   "version": "1.0.0",
+  "description": "Easy FFI for PureScript",
   "main": "src/EasyFFI.purs",
-  "ignore": ["!/src/EasyFFI.purs"],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "gulpfile.js",
+    "package.json"
+  ],
   "private": false
 }
