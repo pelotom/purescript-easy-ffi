@@ -23,7 +23,7 @@ Easy! We can also define foreign functions returning monadic actions, by includi
 
 ```haskell
 log :: forall r. String -> Eff (console :: Unit | r) Unit
-log = unsafeForeignProcedure ["string", ""] "console.log(string);" -- note the $1 instead of $0
+log = unsafeForeignProcedure ["string", ""] "console.log(string);" -- note the extra "" argument
 ```
 
 which is equivalent to this:
