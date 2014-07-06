@@ -1,0 +1,10 @@
+{
+  "name": "purescript-debruijn-ffi",
+  "version": "0.0.0",
+  "description": "De Bruijn index-based FFI for PureScript",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.8.1",
+    "gulp-purescript": "0.0.9"
+  }
+}

@@ -1,0 +1,2 @@
+:m src/DeBruijn.purs
+:i Data.Foreign.DeBruijn
