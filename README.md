@@ -30,11 +30,11 @@ which is equivalent to this:
 
 ```haskell
 foreign import log
-  "function log(string) {\
-  \  return function () {\
-  \    console.log(string);\
-  \  };\
-  \}"
+ "function log(string) {\
+ \  return function () {\
+ \    console.log(string);\
+ \  };\
+ \}"
  :: forall r. String -> Eff (console :: Unit | r) Unit
 ```
 
