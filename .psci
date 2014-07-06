@@ -1,2 +1,2 @@
-:m src/DeBruijn.purs
-:i Data.Foreign.DeBruijn
+:m src/Easy.purs
+:i Data.Foreign.Easy

@@ -1,7 +1,7 @@
 {
-  "name": "purescript-debruijn-ffi",
+  "name": "purescript-easy-ffi",
   "version": "0.0.0",
-  "description": "De Bruijn index-based FFI for PureScript",
+  "description": "Easy FFI for PureScript",
   "license": "MIT",
   "devDependencies": {
     "gulp": "^3.8.1",

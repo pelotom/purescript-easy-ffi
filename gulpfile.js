@@ -7,8 +7,8 @@ var gulp      	= require('gulp')
 gulp.task('compile', function(cb) {
 	var psc = purescript.psc({
 		// Compiler options
-		output: "debruijn.js",
-    // module: "Data.Foreign.DeBruijn"
+		output: "easy.js",
+    module: "Data.Foreign.EasyFFI"
 	});
   psc.on('error', function(e) {
     console.log('wtf');
