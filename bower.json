@@ -9,5 +9,9 @@
     "gulpfile.js",
     "package.json"
   ],
-  "private": false
+  "private": false,
+  "devDependencies": {
+    "purescript-quickcheck": "~0.1.2",
+    "purescript-arrays": "~0.1.8"
+  }
 }
