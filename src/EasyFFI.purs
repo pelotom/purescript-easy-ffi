@@ -3,17 +3,10 @@ module Data.Foreign.EasyFFI
   , unsafeForeignProcedure
   ) where
 
-foreign import unsafeForeignProcedure
-  "\
-   \function unsafeForeignProcedure(args) {\
-   \  return function (stmt) {\
-   \    return Function(wrap(args.slice()))();\
-   \    function wrap() {\
-   \      return !args.length ? stmt : 'return function (' + args.shift() + ') { ' + wrap() + ' };';\
-   \    }\
-   \  };\
-   \}\
-  \"
-  :: forall a. [String] -> String -> a
+import Prelude
+  ( ($)
+  , (++) )
+
+foreign import unsafeForeignProcedure :: forall a. Array String -> String -> a
 
 unsafeForeignFunction args expr = unsafeForeignProcedure args $ "return " ++ expr ++ ";"
