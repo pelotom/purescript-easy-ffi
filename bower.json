@@ -11,11 +11,11 @@
   ],
   "private": false,
   "dependencies": {
-    "purescript-prelude": "^0.1.0"
+    "purescript-prelude": "^1.0.1"
   },
   "devDependencies": {
-    "purescript-arrays": "^0.4.0",
-    "purescript-console": "^0.1.0",
-    "purescript-quickcheck": "^0.6.0"
+    "purescript-arrays": "^1.0.0",
+    "purescript-console": "^1.0.0",
+    "purescript-quickcheck": "^1.0.0"
   }
 }
