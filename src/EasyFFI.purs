@@ -5,8 +5,9 @@ module Data.Foreign.EasyFFI
 
 import Prelude
   ( ($)
-  , (++) )
+  , (<>) )
 
 foreign import unsafeForeignProcedure :: forall a. Array String -> String -> a
 
-unsafeForeignFunction args expr = unsafeForeignProcedure args $ "return " ++ expr ++ ";"
+unsafeForeignFunction::forall a. Array String -> String -> a 
+unsafeForeignFunction args expr = unsafeForeignProcedure args $ "return " <> expr <> ";"
