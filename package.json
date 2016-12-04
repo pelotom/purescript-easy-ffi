@@ -3,6 +3,10 @@
   "version": "0.0.0",
   "description": "Easy FFI for PureScript",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pelotom/purescript-easy-ffi.git"
+  },
   "devDependencies": {
     "gulp": "^3.8.1",
     "gulp-purescript": "0.0.9",
