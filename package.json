@@ -1,15 +1,12 @@
 {
-  "name": "purescript-easy-ffi",
-  "version": "0.0.0",
-  "description": "Easy FFI for PureScript",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/pelotom/purescript-easy-ffi.git"
+  "private": true,
+  "scripts": {
+    "install": "bower install",
+    "build": "pulp build",
+    "test": "pulp test"
   },
   "devDependencies": {
-    "gulp": "^3.8.1",
-    "gulp-purescript": "0.0.9",
-    "gulp-shell": "^0.2.7"
+    "bower": "^1.8.0",
+    "pulp": "^10.0.0"
   }
 }

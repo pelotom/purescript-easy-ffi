@@ -10,8 +10,8 @@
   "license": "MIT",
   "ignore": [
     "**/.*",
-    "gulpfile.js",
-    "package.json"
+    "bower_components",
+    "output"
   ],
   "private": false,
   "dependencies": {
