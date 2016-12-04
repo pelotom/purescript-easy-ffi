@@ -16,12 +16,11 @@ import Prelude
   ( ($)
   , (+)
   , (==)
-  , (>>=)
   , const 
-  , bind 
+  , bind
   , Unit )
 
-ffi::forall a. Array String -> String -> a 
+ffi::forall a. Array String -> String -> a
 ffi = unsafeForeignFunction
 
 easyConst :: Int -> Int -> Int
