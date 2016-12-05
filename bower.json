@@ -20,6 +20,7 @@
   "devDependencies": {
     "purescript-arrays": "^3.1.0",
     "purescript-console": "^2.0.0",
-    "purescript-quickcheck": "^3.1.1"
+    "purescript-quickcheck": "^3.1.1",
+    "purescript-psci-support": "^2.0.0"
   }
 }
