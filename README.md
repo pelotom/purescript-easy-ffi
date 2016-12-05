@@ -1,3 +1,5 @@
+# EasyFFI for PureScript [![Build Status](https://travis-ci.org/pelotom/purescript-easy-ffi.svg?branch=master)](https://travis-ci.org/pelotom/purescript-easy-ffi)
+
 Most foreign imports in PureScript follow a familiar pattern:
 
 ```purescript
