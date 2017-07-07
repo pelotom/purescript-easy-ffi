@@ -12,13 +12,7 @@ import Data.Foreign.EasyFFI (unsafeForeignFunction)
 -- Import Test.QuickCheck, which supports property-based testing
 import Test.QuickCheck (quickCheck)
 
-import Prelude
-  ( ($)
-  , (+)
-  , (==)
-  , const 
-  , bind
-  , Unit )
+import Prelude (Unit, const, discard, ($), (+), (==))
 
 ffi::forall a. Array String -> String -> a
 ffi = unsafeForeignFunction
@@ -32,7 +26,7 @@ easyAdd = ffi ["x", "y"] "x + y"
 easySort :: Array Int -> Array Int
 easySort = ffi ["xs"] "xs.slice().sort(function(a,b){return a-b;})"
 
-main::forall e. Eff ( console::CONSOLE, random::RANDOM, err::EXCEPTION|e ) Unit
+main :: forall e. Eff ( console :: CONSOLE, exception :: EXCEPTION, random :: RANDOM| e) Unit
 main = do
   log "Constant"
   quickCheck $ \n m -> easyConst n m == const n m
