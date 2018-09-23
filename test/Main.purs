@@ -1,9 +1,7 @@
 module Test.Main where
 
-import Control.Monad.Eff (Eff)
-import Control.Monad.Eff.Console (CONSOLE, log)
-import Control.Monad.Eff.Random (RANDOM)
-import Control.Monad.Eff.Exception (EXCEPTION)
+import Effect (Effect)
+import Effect.Console (log)
 import Data.Array (sort)
 
 -- Import the library's module(s)
@@ -26,7 +24,7 @@ easyAdd = ffi ["x", "y"] "x + y"
 easySort :: Array Int -> Array Int
 easySort = ffi ["xs"] "xs.slice().sort(function(a,b){return a-b;})"
 
-main :: forall e. Eff ( console :: CONSOLE, exception :: EXCEPTION, random :: RANDOM| e) Unit
+main :: Effect Unit
 main = do
   log "Constant"
   quickCheck $ \n m -> easyConst n m == const n m
