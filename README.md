@@ -20,22 +20,22 @@ exports.foo = function(x) {
 
 Yuck! Using Easy FFI you can scrap all that boilerplate and write the above as:
 
-```haskell
+```purescript
 foo :: Number -> Number -> Number -> Number
 foo = unsafeForeignFunction ["x", "y", "z"] "(x + y) * z"
 ```
 
 Easy! We can also define foreign functions returning monadic actions, by including an empty argument, e.g.
 
-```haskell
-log :: forall r. String -> Eff (console :: Unit | r) Unit
+```purescript
+log :: String -> Effect Unit
 log = unsafeForeignProcedure ["string", ""] "console.log(string);" -- note the extra ""
 ```
 
 which is equivalent to this:
 
 ```purescript
-foreign import log :: forall r. String -> Eff (console :: Unit | r) Unit
+foreign import log :: String -> Effect Unit
 ```
 
 ```javascript
