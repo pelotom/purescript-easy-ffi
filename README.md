@@ -9,7 +9,7 @@ foreign import foo :: Number -> Number -> Number -> Number
 
 ```javascript
 // In Module.js
-exports.foo = function(x) {
+export function foo (x) {
   return function (y) {
     return function (z) {
       return (x + y) * z; // <- the actually interesting part!
@@ -39,7 +39,7 @@ foreign import log :: forall r. String -> Eff (console :: Unit | r) Unit
 ```
 
 ```javascript
-exports.log = function(string) {
+export function log (string) {
   return function () {
     console.log(string);
   };

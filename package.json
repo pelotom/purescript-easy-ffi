@@ -1,12 +1,11 @@
 {
   "private": true,
   "scripts": {
-    "install": "bower install",
-    "build": "pulp build",
-    "test": "pulp test"
+    "install": "spago install",
+    "build": "spago build",
+    "test": "spago test"
   },
   "devDependencies": {
-    "bower": "^1.8.0",
-    "pulp": "^12.0.0"
+    "spago": "^0.20.8"
   }
 }
